@@ -1,0 +1,18 @@
+:root{
+    --cl-fondo: #f1f0eb;
+    --cl-sec: #644842;
+    --cl-bt:  #877C7B;
+    --cl-bt-elim: #B16D6D;
+    --cl-txt: #000000;
+}
+
+.banner {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    max-height: 200px;
+}
