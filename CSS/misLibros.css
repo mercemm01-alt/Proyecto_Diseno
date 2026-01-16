@@ -1,0 +1,259 @@
+:root{
+    --cl-blanco:#ffffff;
+    --cl-negro: #000000;
+    --cl-fondo: #f1f0eb;
+    --cl-sec: #644842;
+    --cl-bt:  #877C7B;
+    --cl-bt-elim: #B16D6D;
+    --cl-nav: #C3C1C1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: var(--cl-fondo);
+}
+
+/* HEADER */
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.navbar{
+    background-color: var(--cl-nav);
+}
+
+.menu{
+    justify-content: space-between;
+    min-height: 80px;
+}
+
+.menu > *{
+    display: flex;
+    align-items: center;
+}
+
+.abrir-menu, .cerrar-menu{
+    display: none;
+}
+
+.logo img{
+    height: 70px;
+}
+
+.icono-menu{
+    width: 40px;
+    height: 40px;
+    color: var(--cl-negro);
+}
+
+.icono-x{
+    width: 30px;
+    height: 30px;
+    color: var(--cl-blanco);
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    font-size: 1.2rem;
+}
+
+.link-nav{
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+    color: var(--cl-negro);
+    font-weight: 500;
+    padding: 0.2rem 0;
+    margin-right: 25px;
+}
+
+.link-nav::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;              
+    width: 0;                   
+    height: 2px;                
+    background-color: bvar(--cl-negro);
+    transition: width 0.3s ease;
+}
+
+.link-nav:hover::after {
+    width: 100%;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    padding: 0.3rem 0.6rem;
+    background-color: var(--cl-blanco);
+}
+
+.bus {
+    border: none;
+    outline: none;
+    padding: 0.4rem 0.5rem;
+}
+
+.lupa{
+    background-color: var(--cl-blanco);
+    border: none;
+    
+    padding-bottom: 0.4rem;
+}
+
+/* MAIN */
+.info_bt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 400px;
+    margin: -2rem auto 1rem auto;
+
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    background-color: var(--cl-blanco);
+    padding: 0.8rem 2rem;
+}
+
+.info_bt p{
+    margin: 0;
+}
+
+.info_bt button{
+    border: none;
+    border-radius: 55px;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--cl-bt);
+    color: var(--cl-blanco);
+}
+
+.tj-libros {
+    background-color: var(--cl-blanco);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+}
+
+.tj-libros img{
+    width: 100%;
+    height: 350px;
+    border-radius: 4px;
+}
+
+.tj-libros h4{
+    padding: 0.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    min-height: 3.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background-color: var(--cl-negro);
+    color: var(--cl-blanco);
+    padding: 2rem;
+    font-family: 'Cantora One', sans-serif;
+}
+
+/* Minimiza tamaño  links */
+@media (max-width: 1200px) {
+    .links{
+        margin-left: 1rem;
+        gap: 1.6rem;
+    } 
+}
+
+/* Da forma a el menu hamburguesa */
+@media screen and (max-width: 992px){
+    .abrir-menu, .cerrar-menu{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .cerrar-menu{
+        order: 1;
+        align-self: flex-end;
+        display: flex;
+        border: none;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        align-items: end;
+        background-color: var(--cl-sec);
+        
+    }
+
+    .buscador{
+        order: 2;
+        width: 100%;
+        max-width: 100%;
+        padding: 0.6rem 0.55rem;
+        font-size: 0.85rem;
+        align-items: end;
+    }
+
+    .links{
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        position: fixed;
+        align-items: end;
+        flex-direction: column;
+
+        top: 0;
+        right: 0;
+        bottom: 0;
+        
+        padding: 2rem;
+        width: 280px;
+        gap: 1rem;
+
+        background-color: var(--cl-sec);
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+    }
+
+    .links.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .link-nav{
+        order: 3;
+        color: var(--cl-blanco);
+    }
+}
