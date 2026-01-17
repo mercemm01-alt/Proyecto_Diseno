@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cantora+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/inicio.css">
+</head>
+<script defer src="../JS/nav.js"></script>
+<body>
+    <header>
+        <div class="banner">
+            <img src="../Recursos/Img/bannerConLogo.png" alt="banner">
+        </div>
+        <!--Menu grande para ordenadores-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container menu">
+
+                <a href="" class="logo"><img src="../Recursos/Img/Logo22.png" alt="Logo 22"></a>
+
+                <button id="abrir"  class="abrir-menu">
+                    <svg class="icono-menu" xmlns="http://www.w3.org/2000/svg"fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5
+                        0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
+
+                <div class="links" id="links">
+                    <button id="cerrar" class="cerrar-menu">
+                        <svg class="icono-x" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                        </svg>
+                    </button>
+                    
+                    <a href="" class="link-nav">Inicio</a>
+                    <a href="" class="link-nav">Mis Libros</a>
+                    <a href="recomendacions.html" class="link-nav">Recomendaciones</a>
+                    <a href="foro.html" class="link-nav">Foro</a>
+                
+                    <form class="buscador">
+                        <input class="bus" type="search" placeholder="Nombre del libro">
+                        <button class="lupa">
+                            <img src="../Recursos/Iconos/lupa.svg" alt="lupa">
+                        </button>
+                    </form>
+                
+                </div>
+
+                
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section class="main-superior row g-2">
+            <article class="col-6 col-md-4 col-lg-4 col-xl-3 perfil">
+                <div class="nom-perfil">
+                    <h2 class="user">acsl.22</h2>
+                </div>
+
+                <div class="img-perfil">
+                    <img src="../Recursos/Img/Perro.jpg" alt="Img Perfil">
+                </div>
+            </article>
+
+            <article class="col-6 col-md-8 col-lg-3 col-xl-4 info-perfil">
+                <div class="btns-perfil">
+                    <a class="bt-perfil" href="../misLibros.html">Mis Libros</a>
+                    <a class="bt-perfil" href="foro.html">Foros <span>15</span></a>
+                </div>
+
+                <div class="descripcion">
+                    Soy una amante de los libros de fantasia y me encantaria 
+                    poder escribir algun dia mi propio libro. 
+                </div>
+            </article>
+ 
+            <article class="col-12 col-lg-5 col-xl-4 lectura-actual">
+                <h3>Lectura Actual</h3>
+                <img src="../Recursos/Img/Casa de tierra y sangre.jpg" alt="Casa de tierra y sangre">
+                <p class="titulo">Casa de tierra y sangre</p>
+                <p class="valoracion">Mi Valoración: "Estrellas"</p>
+            </article>
+        </section>
+        
+        <section class="recomen row g-2">
+            <h2>RECOMENDACIONES</h2>
+            <div class="reco-lista">
+                <article class="col-12 col-lg-4 libro-reco">
+                    <img src="../Recursos/Img/una corte de niebla y furia.jpeg" alt="Una corte de niebla y furia">
+                    <p>Una corte de niebla y furia</p>
+                </article>
+                
+                <article class="col-12 col-lg-4 libro-reco">
+                    <img src="../Recursos/Img/La asistenta.jpeg" alt="La Asistenta">
+                    <p>La Asistenta</p>
+                </article>
+
+                <article class="col-12 col-lg-4 libro-reco">
+                    <img src="../Recursos/Img/El secreto de la asistenta.jpeg" alt="El secreto de La Asistenta">
+                    <p>El secreto de La Asistenta</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer text-center">
+        <div>
+            <h4>Siguenos en:</h4>
+            <a href=""><img src="" alt=""></a>
+        </div>
+        <div>
+            <h4>Sobre Nosotros</h4>
+            <p>
+                Soy una programadora sin anima de lucro que aparte de la informatica también le encanta la lectura y
+                que siempre a soñado con poder crear mi propia web para los libros total mente personalizada para los
+                amantes de la lectura.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

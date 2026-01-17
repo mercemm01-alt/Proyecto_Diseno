@@ -16,7 +16,6 @@
 body{
     background-color: var(--cl-fondo);
 }
-
 /* HEADER */
 .banner {
     width: 100%;
@@ -115,57 +114,95 @@ body{
 .lupa{
     background-color: var(--cl-blanco);
     border: none;
-    
     padding-bottom: 0.4rem;
 }
 
 /* MAIN */
-.info_bt{
+.main-superior{
+    margin-bottom: 2rem;
+}
+
+.img-perfil img{
+    width: 230px;
+}
+
+.user{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    margin-left: 75px;
+}
+
+.btns-perfil{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 400px;
-    margin: -2rem auto 1rem auto;
-
-    border: 1px solid #ccc;
-    border-radius: 999px;
-    background-color: var(--cl-blanco);
-    padding: 0.8rem 2rem;
+    gap: 2rem;
+    padding: 1rem 0rem;
+    margin-top: 28px;
 }
 
-.info_bt p{
-    margin: 0;
-}
-
-.info_bt button{
-    border: none;
-    border-radius: 55px;
-    padding: 0.5rem 1.5rem;
+.bt-perfil{
     background-color: var(--cl-bt);
     color: var(--cl-blanco);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 0.5rem 2rem;
 }
 
-.tj-libros {
-    background-color: var(--cl-blanco);
-    padding: 1.5rem;
+.descripcion{
+    background-color: #ddd;
+    padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.lectura-actual{
     display: flex;
     flex-direction: column;
+    align-items: end;
+}
+
+.lectura-actual h3{
+    margin-right: 20px;
+}
+
+.titulo{
+    font-size: 1.2rem;
+    margin: 0;
+    margin-right: 9px;
+}
+
+.valoracion{
+    font-size: 1.1rem;
+    margin-right: 25px;
+}
+
+.lectura-actual img{
+    height: 320px;
+}
+
+.reco-lista{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.recomen h2{
     text-align: center;
-    height: auto;
+    margin-bottom: 2rem;
 }
 
-.tj-libros img{
-    border-radius: 4px;
+.libro-reco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
 }
 
-.tj-libros h4{
-    padding: 0.5rem;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.3rem;
-    min-height: 3.5rem;
+.libro-reco img{
+    height: 320px;
+}
+
+.libro-reco p{
+    font-size: 1.2rem;
+    max-width: 260px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
