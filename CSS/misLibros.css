@@ -141,6 +141,10 @@ body{
     margin: 0;
     margin-left: 1rem;
 }
+article a{
+    text-decoration: none;
+    color: inherit;
+}
 
 .tj-libros {
     background-color: var(--cl-blanco);
@@ -151,11 +155,6 @@ body{
     flex-direction: column;
     text-align: center;
     height: auto;
-    color: var(--cl-negro);
-}
-
-.tj-libros a{
-    text-decoration: none;
 }
 
 .tj-libros img{
