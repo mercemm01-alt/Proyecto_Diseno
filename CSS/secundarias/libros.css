@@ -202,6 +202,23 @@ body{
 
 /* Da forma a el menu hamburguesa */
 @media screen and (max-width: 992px){
+    .tj-libro img{
+        display: block;
+        margin: auto;
+    }
+
+    .info-libro, 
+    .info-libro table{
+        text-align: center;
+        margin: auto;
+    }
+    .parte-inferior{
+        display: block;
+    }
+    .estado-libro{
+        text-align: center;
+    }
+
     .abrir-menu, .cerrar-menu{
         display: block;
         border: 0;
