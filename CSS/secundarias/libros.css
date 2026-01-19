@@ -1,5 +1,4 @@
 :root{
-    --lt--titulos: 'Bebas Neue', sans-serif;
     --cl-blanco:#ffffff;
     --cl-negro: #000000;
     --cl-fondo: #f1f0eb;
@@ -51,7 +50,7 @@ body{
 }
 
 .logo img{
-    height: 4rem;
+    height: 6rem;
 }
 
 .icono-menu{
@@ -121,57 +120,65 @@ body{
 .lupa img{
     margin-right: 18px;
 }
-
 /* MAIN */
-.info_bt{
-    display: flex;
-    align-items: center;
-    
-
-    width: 200px;
-    margin: -1rem auto 1rem auto;
-
-    border: 1px solid #ccc;
-    border-radius: 999px;
-    background-color: var(--cl-blanco);
-    padding: 0.8rem 2rem;
-}
-
-.info_bt p{
-    margin: 0;
-    margin-left: 1rem;
-}
-
-.tj-libros {
-    background-color: var(--cl-blanco);
-    padding: 1.5rem;
+.ficha-libro{
+    background-color:var(--cl-blanco);
+    padding: 1rem;
+    margin-bottom: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    display: flex;
+}
+
+
+
+.tj-libro img{
+    height: 350px;
+    margin-left: 8px;
+}
+
+.info-libro h3{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.8rem;
+}
+
+.info{
     flex-direction: column;
-    text-align: center;
-    height: auto;
-    color: var(--cl-negro);
+    margin-top: 1.6rem;
+    border-collapse: separate;
+    border-spacing: 0rem 0.6rem;
 }
 
-.tj-libros a{
-    text-decoration: none;
+.info th{
+    text-align: left;
+    padding-right: 1.5rem;
 }
 
-.tj-libros img{
-    border-radius: 4px;
+.parte-inferior{
+    display: flex;
+    align-items: flex-start;
 }
 
-.tj-libros h4{
-    padding: 0.5rem;
-    font-family: var(--lt--titulos);
-    font-size: 1.3rem;
-    min-height: 3.5rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.estado-libro select{
+    border: none;
+    padding: 0.5rem 4.5rem;
+    background-color: var(--cl-bt);
+    color: var(--cl-blanco);
+    border-radius: 55px;
+    font-size: 1.2rem;
 }
 
+.estado-libro{
+    margin-top: 10px;
+    margin-right: 4rem;
+}
 
+.sinopsis{
+    margin-right: 6rem;
+}
+
+.notas{
+    margin-left: 310px;
+}
 
 /* FOOTER */
 .footer {
