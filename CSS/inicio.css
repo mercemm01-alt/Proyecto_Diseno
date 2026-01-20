@@ -1,4 +1,5 @@
 :root{
+    --lt--normal:'Noteworthy', sans-serif;
     --lt--titulos: 'Bebas Neue', sans-serif;
     --cl-blanco:#ffffff;
     --cl-negro: #000000;
@@ -15,6 +16,7 @@
     
 }
 body{
+    font-family: var(--lt--normal);
     font-size: 1.2rem;
     background-color: var(--cl-fondo);
 }
@@ -177,7 +179,6 @@ body{
 }
 
 .descripcion{
-    /*font-family: 'Noteworthy', sans-serif;*/
     background-color: #ddd;
     padding: 1rem;
     border-radius: 8px;
@@ -244,11 +245,52 @@ body{
 }
 
 /* Minimiza tamaño  links */
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .links{
         margin-left: 1rem;
         gap: 1.6rem;
     } 
+}
+
+@media screen and (max-width: 500px){
+
+    .perfil,
+    .info-perfil {
+        width: 100%;
+    }
+
+    .img-perfil {
+        order: 1;
+        text-align: center;
+    }
+
+    .img-perfil img {
+        width: 120px;
+        height: 120px;
+        border-radius: 20%;
+    }
+
+    .btns-perfil {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 15px 0;
+    }
+
+    .descripcion {
+        order: 3;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .user{
+        margin: 0;
+        text-align: center;
+    }
+    .tj-libro{
+        margin-bottom: 24px;
+    }
 }
 
 /* Da forma a el menu hamburguesa */
@@ -326,10 +368,10 @@ body{
     }
 }
 
-/*@font-face{
+@font-face{
     font-family: 'Noteworthy';
     src: url('../Tipografias/Noteworthy-Lt.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}*/
+}

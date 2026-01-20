@@ -1,4 +1,5 @@
 :root{
+    --lt--normal:'Noteworthy', sans-serif;
     --cl-blanco:#ffffff;
     --cl-negro: #000000;
     --cl-fondo: #f1f0eb;
@@ -14,6 +15,7 @@
     
 }
 body{
+    font-family: var(--lt--normal);
     font-size: 1.2rem;
     background-color: var(--cl-fondo);
 }
@@ -218,6 +220,9 @@ body{
     .estado-libro{
         text-align: center;
     }
+    .notas{
+        margin: 0;
+    }
 
     .abrir-menu, .cerrar-menu{
         display: block;
@@ -280,4 +285,11 @@ body{
         order: 3;
         color: var(--cl-blanco);
     }
+}
+@font-face{
+    font-family: 'Noteworthy';
+    src: url('../Tipografias/Noteworthy-Lt.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }

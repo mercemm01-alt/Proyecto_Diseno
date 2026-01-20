@@ -1,5 +1,6 @@
 /* VARIABLES GLOBALES */
 :root {
+    --lt--normal:'Noteworthy', sans-serif;
     --cl-blanco:#ffffff;
     --cl-negro: #000000;
     --cl-fondo: #f1f0eb;
@@ -23,6 +24,7 @@
 
 /* FONDO DE PANTALLA */
 body {
+    font-family: var(--lt--normal);
     min-height: 100vh;
     background: url('../Recursos/Img/fondoAgustadoColor.jpg') no-repeat center top;
     background-size: cover;
@@ -145,4 +147,11 @@ body {
     .nuestraPagina{
         opacity: 0;
     }
+}
+@font-face{
+    font-family: 'Noteworthy';
+    src: url('../Tipografias/Noteworthy-Lt.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
